@@ -1,0 +1,25 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+.env
+.env.local
+.env.*.local
+
+logs/
+.pytest_cache/
+.coverage
+htmlcov/
+
+data/runtime/tasks/
+
+# Generated app outputs
+generated_apps/
+
+# Runtime state - local only
+data/runtime/
+docs/HUMAN_HELP_RUNTIME.md
+!data/runtime/.gitkeep
+backups/
