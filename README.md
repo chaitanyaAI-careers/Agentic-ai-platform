@@ -356,7 +356,7 @@ Only portfolio-safe representative material is published here.
 
 The complete private development implementation and proprietary platform code are maintained separately.
 
-See [`NOTICE.md`](NOTICE.md) for repository-specific notice information.
+See [`SHOWCASE_NOTICE.md`](SHOWCASE_NOTICE.md) for repository-specific showcase and intellectual-property information.
 
 ---
 
@@ -373,5 +373,8 @@ Related portfolio areas include:
 - full-stack AI products
 - workflow reliability and systems engineering
 
-**GitHub:** [chaitanyaAI-careers](https://github.com/chaitanyaAI-careers)
-**LinkedIn:** [linkedin.com/in/chaitanyaai-careers](https://www.linkedin.com/in/chaitanyaai-careers/)
+**Chaitanya Sai — Applied AI Engineer**
+
+Generative AI · LLMs · RAG · Agentic AI · AI Platform & Backend Engineering
+
+[Portfolio](https://chaitanya-sai-portfolio.vercel.app) · [GitHub](https://github.com/chaitanyaAI-careers) · [LinkedIn](https://www.linkedin.com/in/chaitanyaai-careers/)
