@@ -23,7 +23,6 @@
 - pause / persist / restart / resume
 - idempotent execution semantics
 - Docker and Docker Compose
-- GitHub Actions CI
 - OpenTelemetry
 - structured logs and metrics
 - end-to-end integration tests
