@@ -16,3 +16,9 @@ PRD / Goal → Planning → Task Decomposition → Agent Routing → Policy Eval
 - Support interchangeable model providers behind stable interfaces.
 
 The public showcase intentionally represents these boundaries with simplified code. The complete implementation remains private.
+
+## Target Architecture & Delivery Status
+
+![Agentic AI Platform target architecture](diagrams/agentic-ai-platform-target-architecture.svg)
+
+The target architecture shows the designed platform direction while explicitly separating public evidence, broader private implementation, in-progress capabilities, and planned components.

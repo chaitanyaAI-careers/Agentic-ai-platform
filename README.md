@@ -55,6 +55,14 @@ The design intentionally separates **reasoning**, **authorization**, **execution
 
 ---
 
+### Target Architecture & Delivery Status
+
+![Agentic AI Platform target architecture](docs/diagrams/agentic-ai-platform-target-architecture.svg)
+
+> The target architecture distinguishes **implemented public evidence**, **broader private implementation**, **in-progress engineering**, and **planned architecture**. See [`docs/roadmap.md`](docs/roadmap.md) for delivery status.
+
+---
+
 ## Public Showcase
 
 The public repository contains simplified, standalone examples of selected platform concepts.
