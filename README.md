@@ -1,3 +1,5 @@
+![Project header](docs/branding/readme-header.png)
+
 # Agentic AI Platform
 
 ### Governed Multi-Agent Workflows · Human Approval · Controlled Execution · AI Platform Engineering
