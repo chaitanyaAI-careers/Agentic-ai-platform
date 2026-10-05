@@ -57,11 +57,15 @@ The design intentionally separates **reasoning**, **authorization**, **execution
 
 ---
 
-### Target Architecture & Delivery Status
+### Evidence-Aware Architecture
 
-![Agentic AI Platform target architecture](docs/diagrams/agentic-ai-platform-target-architecture.svg)
+The current architecture is documented by evidence surface rather than by an outdated target-state diagram:
 
-> The target architecture distinguishes **implemented public evidence**, **broader private implementation**, **in-progress engineering**, and **planned architecture**. See [`docs/roadmap.md`](docs/roadmap.md) for delivery status.
+- **Public showcase:** routing, approval/risk controls, controlled execution boundaries, provider abstraction, deterministic evaluation, tests and CI
+- **Verified broader implementation:** LangGraph typed-state orchestration, MCP, durable PostgreSQL workflow state, LiteLLM routing, Redis/Kafka execution infrastructure, identity controls, observability and cloud deployment
+- **Next evidence surface:** load/concurrency, SLO, recovery-time and additional public-safe implementation evidence
+
+See [`docs/architecture.md`](docs/architecture.md) and [`docs/roadmap.md`](docs/roadmap.md) for the current architecture and evidence status.
 
 ---
 
