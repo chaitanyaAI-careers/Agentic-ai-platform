@@ -59,6 +59,8 @@ The design intentionally separates **reasoning**, **authorization**, **execution
 
 ### Evidence-Aware Architecture
 
+![Agentic AI Platform evidence-aware architecture](docs/diagrams/agentic-ai-platform-architecture.svg)
+
 The current architecture is documented by evidence surface rather than by an outdated target-state diagram:
 
 - **Public showcase:** routing, approval/risk controls, controlled execution boundaries, provider abstraction, deterministic evaluation, tests and CI
