@@ -151,78 +151,51 @@ The broader platform treats execution history and workflow state as first-class 
 
 Implemented private-development areas include audit logging, execution lineage, rollback-oriented workflows, and memory abstractions.
 
-Durable PostgreSQL-backed pause/resume and stronger observability are separate workstreams and are **not claimed as complete**.
+The verified broader implementation also includes durable PostgreSQL-backed workflow state, checkpointed pause/resume behavior, and distributed observability; these capabilities are maintained outside this public showcase.
 
 ---
 
-## Broader Private Development Implementation
+## Verified Broader Private Implementation
 
-The separately maintained development project includes broader implementations around:
+The separately maintained private platform extends the public concepts into a larger production-oriented control plane.
 
-- multi-role Planner / Coder / Reviewer / Tester workflows
-- task decomposition and work queues
-- agent-role routing
-- human approval queues
-- execution authorization
-- policy gates
-- sandbox-oriented validation
-- controlled execution
-- audit logging and execution lineage
-- rollback-oriented workflow controls
-- memory abstractions
-- local LLM routing with Ollama
-- evaluation infrastructure
-- FastAPI interfaces
-- operator workflows
+Verified broader implementation includes:
 
-The public repository is a recruiter-safe representation of selected engineering concepts from this broader system.
+- LangGraph typed-state graphs using explicit state contracts across Planner, Coder, Reviewer, and Tester roles
+- conditional routing, work decomposition, durable checkpoints, and interrupt-based human approvals
+- separation of planning, authorization, execution, validation, review, and recovery responsibilities
+- sandboxed tool execution and rollback / recovery controls
+- custom MCP server/client integration using JSON-RPC with schema-aware tool/context handling
+- PostgreSQL-backed durable workflow state and persistent execution history
+- LiteLLM-based model routing across hosted and local providers with fallback behavior
+- Redis background workers and Kafka event streams for asynchronous execution
+- OAuth2/OIDC/JWT identity patterns with RBAC and SSO-ready integration boundaries
+- Langfuse and OpenTelemetry tracing across agent, model, tool, and persistence boundaries
+- Dockerized services with Kubernetes / Helm deployment patterns and Terraform-managed AWS infrastructure
+- FastAPI/Pydantic service interfaces with SSE/WebSocket streaming where appropriate
 
----
+### Measured Engineering Evidence
 
-## Currently Strengthening
+- **94.8% agent task completion** across evaluation suites
+- **3,950+ passing regression tests** in the broader private implementation
 
-The following are active engineering directions and are **not presented as completed capabilities**:
-
-### MCP Interoperability
-
-- real MCP server/client interoperability
-- MCP discovery
-- tool/schema validation
-- authorization-aware MCP invocation
-
-### Durable Workflow State
-
-- PostgreSQL-backed workflow state
-- pause → persist → restart → resume
-- durable checkpoints
-- idempotent workflow execution
-
-### Deployment and Operations
-
-- Docker / Docker Compose
-- broader private-platform CI and release automation
-- OpenTelemetry
-- structured logging
-- metrics
-
-### Evaluation and Integration
-
-- end-to-end integration testing
-- agent evaluation benchmark
-- broader workflow regression coverage
-- LangGraph comparison baseline
+These metrics describe the broader private implementation, not the smaller public showcase in this repository.
 
 ---
 
-## Later-Stage Evaluation
+## Next Evidence Surface
 
-Potential later-stage platform work includes:
+The strongest remaining work is not basic feature completion; it is expanding externally reproducible operational evidence around the broader platform.
 
-- Kubernetes
-- infrastructure as code
-- broader distributed-agent interoperability
+Current evidence-building priorities include:
 
-These are exploratory/later-stage directions, not current implementation claims.
+- additional load and concurrency measurements
+- explicit SLO / error-budget reporting
+- recovery-time and failure-injection measurements
+- broader autoscaling and infrastructure-efficiency evidence
+- additional public-safe implementation samples where proprietary boundaries allow
+
+These items are not represented as completed evidence until corresponding measurements or public artifacts exist.
 
 ---
 
@@ -237,17 +210,23 @@ These are exploratory/later-stage directions, not current implementation claims.
 - governance and approval contracts
 - deterministic evaluation examples
 
-### Broader Private Development
+### Verified Broader Private Implementation
 
-- Python
-- FastAPI
-- Ollama / local LLM routing
-- multi-agent orchestration
-- approval and policy controls
-- sandbox-oriented execution
-- audit and evaluation infrastructure
+- Python / FastAPI / Pydantic
+- LangGraph
+- MCP
+- LiteLLM
+- AWS Bedrock / Anthropic / OpenAI / Ollama
+- PostgreSQL
+- Redis
+- Kafka
+- OAuth2 / OIDC / JWT
+- Langfuse / OpenTelemetry
+- Docker
+- Kubernetes / Helm
+- Terraform / AWS
 
-Technologies listed under **Currently Strengthening** are intentionally kept separate from implemented capabilities.
+The technology lists above intentionally distinguish what is directly inspectable in this repository from the broader implemented system.
 
 ---
 
@@ -356,7 +335,7 @@ This repository is a **curated public engineering showcase**, not the full sourc
 
 The public code demonstrates representative platform concepts. It should not be interpreted as evidence that every capability described in the broader architecture is implemented in this repository.
 
-Likewise, items under **Currently Strengthening** and **Later-Stage Evaluation** are roadmap or active-development directions and are not claimed as completed.
+Likewise, broader private capabilities and measured results are labeled separately from public code, and future evidence work remains explicitly identified as such.
 
 ---
 
@@ -385,7 +364,7 @@ Related portfolio areas include:
 
 **Chaitanya Sai — Applied AI Engineer**
 
-Generative AI · LLM Applications · RAG · Agentic AI · AI Platform & Backend Engineering
+Generative AI · LLM Applications · Agentic AI · RAG · AI Platform & Backend · AI Product Engineering
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-111827?style=flat-square&logo=vercel&logoColor=white)](https://chaitanya-sai-portfolio.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/chaitanyaAI-careers)
