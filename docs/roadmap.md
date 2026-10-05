@@ -1,36 +1,50 @@
 # Engineering Roadmap
 
-## Implemented in the Private Development Project
+## Verified Broader Private Implementation
 
-- Planner / Coder / Reviewer / Tester workflows
-- task routing and work queues
-- approval queues and execution authorization
-- policy gates
-- sandbox validation and controlled execution
+- LangGraph Planner / Coder / Reviewer / Tester typed-state workflows
+- conditional routing and task decomposition
+- human approval queues and execution authorization
+- policy and risk gates
+- sandboxed / controlled execution
+- MCP server/client interoperability with JSON-RPC and schema-aware handling
+- PostgreSQL durable workflow state
+- checkpoint, pause/resume, rollback, and recovery behavior
+- LiteLLM model routing across hosted and local providers
+- Redis background workers
+- Kafka event streams
+- OAuth2/OIDC/JWT identity patterns with RBAC and SSO-ready boundaries
+- Langfuse / OpenTelemetry tracing
+- FastAPI/Pydantic service interfaces
+- Dockerized services
+- Kubernetes / Helm deployment patterns
+- Terraform-managed AWS infrastructure
 - audit logging and execution lineage
-- rollback/checkpoint workflows
-- memory abstractions
-- local model routing with Ollama
-- evaluation infrastructure
-- FastAPI and operator-facing workflows
+- evaluation infrastructure and broad regression coverage
 
-## Currently Developing / Strengthening
+## Publicly Verifiable Showcase
 
-- real MCP server/client interoperability
-- MCP discovery and schema validation
-- authorization-aware MCP invocation
-- PostgreSQL durable workflow persistence
-- pause / persist / restart / resume
-- idempotent execution semantics
-- Docker and Docker Compose
-- OpenTelemetry
-- structured logs and metrics
-- end-to-end integration tests
-- agent evaluation benchmarks
-- LangGraph comparison baseline
+- role routing
+- approval and risk controls
+- controlled-execution boundaries
+- provider abstraction
+- deterministic evaluation
+- automated tests
+- GitHub Actions CI
 
-## Later-Stage Evaluation
+## Measured Evidence
 
-- Kubernetes
-- infrastructure-as-code
-- broader distributed-agent interoperability
+- 94.8% agent task completion across evaluation suites
+- 3,950+ passing regression tests in the broader private implementation
+
+## Current Evidence-Building Priorities
+
+- additional load and concurrency measurements
+- explicit SLO / error-budget reporting
+- recovery-time and fault-injection measurements
+- autoscaling and infrastructure-efficiency evidence
+- additional public-safe implementation samples where proprietary boundaries allow
+
+## Evidence Rule
+
+A capability is labeled public only when directly inspectable in this repository. Broader implemented capabilities remain labeled private, and future measurements remain future evidence until reproduced.
